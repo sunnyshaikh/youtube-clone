@@ -1,0 +1,29 @@
+.sidebar__row {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.sidebar__text {
+    margin-left: 1.6rem;
+    font-size: 0.98rem;
+}
+
+.sidebar__row:hover {
+    background-color: #f1f2f3;
+}
+
+.sidebar__row.selected {
+    background-color: #e6e6e6;
+}
+
+.sidebar__row.selected .sidebar__icon {
+    color: #f00;
+}
+
+.sidebar__row.selected .sidebar__text {
+    font-weight: 500;
+    color: #000;
+}
