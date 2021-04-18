@@ -1,11 +1,41 @@
 .app__content {
     display: flex;
+    position: relative;
+    top: 68px;
+    min-height: calc(100vh - 68px);
+    background:#fafafa;
+
+}
+
+.app__content.active .sidebar {
+    width: 60px;
+}
+
+.app__content.active .sidebar__text {
+    opacity: 0;
+    margin-left: 2rem;
+}
+
+.app__content.active .videos {
+    margin-left: 60px;
+    width: 100%;
 }
 
 .sidebar {
-    flex: 0.18;
+    position: fixed;
+    width: 240px;
+    height: calc(100vh - 68px);
+    background:#fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: .5s ease;
 }
 
 .videos {
-    flex: 0.82;
+    position: relative;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    height: 100%;
+    padding: 0 1rem;
+    transition: .5s ease;
 }

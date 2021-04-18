@@ -1,5 +1,9 @@
 :root {
   --dark-gray: #555555;
+  --very-light-gray: #e6e6e6;
+  --light-gray: #f1f2f3;
+  --yt-red: #f00;
+  --text-dark: #111;
 }
 
 * {
@@ -15,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -27,4 +32,10 @@ code {
   background: none;
   border: 0;
   outline: 0;
+}
+
+hr {
+  border: 1.5px solid #e4e4e4;
+  border-bottom: 0;
+  margin: 1rem 0;
 }
