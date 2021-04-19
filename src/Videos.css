@@ -1,0 +1,17 @@
+.videos {
+    position: relative;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    height: 100%;
+    padding: 0 1rem;
+    transition: .5s ease;
+}
+
+.videos__heading {
+    margin: 0.5rem 0;
+}
+
+.recommended__videos {
+    display: flex;
+    flex-wrap: wrap;
+}

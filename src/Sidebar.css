@@ -1,3 +1,13 @@
+.sidebar {
+    position: fixed;
+    width: 240px;
+    height: calc(100vh - 68px);
+    background:#fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: .5s ease;
+}
+
 .sidebar__row {
     display: flex;
     align-items: center;

@@ -16,26 +16,8 @@
     margin-left: 2rem;
 }
 
-.app__content.active .videos {
+.app__content.active .videos,
+.app__content.active .search__page {
     margin-left: 60px;
     width: 100%;
-}
-
-.sidebar {
-    position: fixed;
-    width: 240px;
-    height: calc(100vh - 68px);
-    background:#fff;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: .5s ease;
-}
-
-.videos {
-    position: relative;
-    margin-left: 240px;
-    width: calc(100% - 240px);
-    height: 100%;
-    padding: 0 1rem;
-    transition: .5s ease;
 }
