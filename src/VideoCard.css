@@ -1,11 +1,11 @@
 .video__card {
-    width: 270px;
+    width: 280px;
     margin-bottom: 40px;
 }
 
 .thumbnail {
-    height: 146px;
-    width: 255px;
+    height: 148px;
+    width: 94%;
 }
 
 .videocard__info {

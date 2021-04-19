@@ -14,6 +14,15 @@ function toggleSidebar() {
     content.classList.toggle('active');
 }
 
+function toggleSetting() {
+    const setting = document.querySelector('.header__settings');
+    setting.classList.toggle('active');
+}
+
+function changeTheme() {
+    alert('Feature coming soon:)');
+}
+
 function Header() {
     const [inputSearch, setInputSearch] = useState('');
 
@@ -37,7 +46,14 @@ function Header() {
                 <button type="button" className="btn"><VideoCallIcon /></button>
                 <button type="button" className="btn"><AppsIcon /></button>
                 <button type="button" className="btn"><NotificationsIcon /></button>
-                <button type="button" className="btn btn__round"><PersonIcon /></button>
+                <button type="button" className="btn btn__round" onClick={toggleSetting}><PersonIcon /></button>
+            </div>
+            <div className="header__settings">
+                <div className="theme__toggler">
+                    <input type="checkbox" id="theme" onChange={changeTheme} />
+                    <label htmlFor="theme">Light/Dark</label>
+                </div>
+
             </div>
         </nav>
     )
